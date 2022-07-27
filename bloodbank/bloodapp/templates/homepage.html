@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body bgcolor="FFDAB9">
+    {% load static %}
+    <img src="{% static 'image/header_img.jpg' %}" width="100" height="80" />
+{% csrf_token %}
+<font color="red" size="8" face="Comic Sans MS"> &nbsp; Online Blood bank </font>
+<marquee bgcolor="EE9A4D"><font color="7E3517" face="Comic Sans MS"> Save Lifes!! &nbsp; &nbsp; Save Lifes!!  &nbsp; &nbsp;Save Lifes!!</font></marquee>
+ {% load static %}
+    <img src="{% static 'image/drop_img.png' %}" width="18" height="25"/>
+    <a href="{% url 'login' %}"><font size="5" color="red" face="Trebuchet MS (Body)">Home</font></a> &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;
+     {% load static %}
+    <img src="{% static 'image/drop_img.png' %}" width="18" height="25"/>
+    <a href="{% url 'login' %}"><font size="5" color="red" face="Trebuchet MS (Body)">Log in</font></a> &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;
+     {% load static %}
+    <img src="{% static 'image/drop_img.png' %}" width="18" height="25"/>
+    <a href="{% url 'search' %}" ><font size="5" color="red" face="Trebuchet MS (Body)">Blood request</font></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;
+     {% load static %}
+    <img src="{% static 'image/drop_img.png' %}" width="18" height="25"/>&nbsp;
+    <a href="{% url 'datas' %}" ><font size="5" color="red" face="Trebuchet MS (Body)">Donar details</font></a>&nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;
+     {% load static %}
+    <img src="{% static 'image/drop_img.png' %}" width="18" height="25"/>
+    <a href="" ><font size="5" color="red" face="Trebuchet MS (Body)">About</font></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;
+
+  {% load static %}
+&nbsp; <img src="{% static 'image/home_img.jpg' %}" width="1510" height="575" >
+</body>
+</html>

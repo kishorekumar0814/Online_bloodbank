@@ -1,0 +1,6 @@
+body{
+background-repeat: no-repeat;
+background:url("image/home_img.jpg");
+height:100px;
+background-size: cover;
+}

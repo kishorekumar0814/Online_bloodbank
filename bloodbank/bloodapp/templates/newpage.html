@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Set Password</title>
+</head>
+<body>
+<center><h2>Set Password</h2><br><br>
+
+</center>
+
+<form action="" method="post">
+    {% csrf_token %}
+<table align="center"cellpadding="10">
+<tr>
+<td>UserName</td>
+<td><input type="text" name="Username" maxlength="25" placeholder="enter user name"/> </td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type="password"name="Password" maxlength="100" placeholder="enter password"/></td>
+</tr>
+</table>
+<center>
+            <input type="submit" value="Login In" name="enquiry"><br>
+
+
+</center>
+
+</body>
+</html>

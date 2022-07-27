@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blood Search</title>
+       {% load static %}
+    <link href="{% static 'search.css' %}" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+<form action="" method="post">
+    {% csrf_token %}
+   <br><br><br><br><center>
+   <h1>Blood Search</h1>
+</b>Enter blood group</b>: <input type="text" name="blood type">
+        <input type="submit" value="Search"><br></br>
+
+    </center>
+</form>
+</body>
+</html>

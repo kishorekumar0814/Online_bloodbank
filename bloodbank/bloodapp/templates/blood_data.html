@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>STOCK</title>
+            {% load static %}
+    <link href="{% static 'datas.css' %}" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+<center><h1>Blood Stock</h1>
+<hr>
+    <form method="post">
+        {% csrf_token %}
+        {{form}}
+        <input type="submit" value="Submit" name="enquiry">
+        <input type="reset" value="Cancel" name="enquiry"><br><br>
+    </form>
+</center>
+
+</body>
+</html>

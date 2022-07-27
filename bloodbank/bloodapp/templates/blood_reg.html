@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    {% load static %}
+    <link href="{% static 'datas.css' %}" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+<center>
+    <h1>Registration Form</h1>
+    <hr>
+</center>
+    <script type="text/javascript"> var name=window.alert("Registration finished successfully");
+</script>
+<form action="" method="post">
+{% csrf_token %}
+<table align="center" cellpadding="10">
+<tr>
+<td>First Name</td>
+<td><input type="text" name="FirstName" maxlength="25" placeholder="enter first name"/> </td>
+</tr>
+<tr>
+<td>Last Name</td>
+<td><input type="text" name="LastName" maxlength="25" placeholder="enter last name"/>
+</td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type="password"name="Password" maxlength="100" placeholder="enter password"/></td>
+</tr>
+<tr>
+<td>Confirm Password</td>
+<td><input type="password"name="ConfirmPassword" maxlength="100" placeholder="enter confirm password"/></td>
+</tr>
+<tr>
+<td>Email ID</td>
+<td><input type="email"name="EmailID" maxlength="100" placeholder="enter email id"/></td>
+</tr>
+<tr>
+<td>Phone Number</td>
+<td>
+<input type="text" name="Phone_Number" maxlength="10" placeholder="mobile no"/>
+</td>
+</tr>
+<tr>
+<td>Address</td>
+<td><input type="address"name="Address" maxlength="100" placeholder="enter address"/></td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>
+<input type="radio"name="Gender"value="Male"/>
+Male
+<input type="radio" name="Gender"value="Female"/>
+Female
+</td>
+</tr>
+<tr>
+<td>Blood Group<br/><br><br/></td>
+<td>
+<br/>
+<select type="text" name="Blood_Group">
+<option>select one</option>
+<option>A+</option>
+<option>B+</option>
+<option>O+</option>
+<option>AB+</option>
+<option>A-</option>
+<option>B-</option>
+<option>O-</option>
+<option>AB-</option>
+</select></br><br>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit">&emsp;
+<input type="reset" value="Reset">
+</td>
+</tr>
+</table>
+
+</form>
+</body>
+</html>
